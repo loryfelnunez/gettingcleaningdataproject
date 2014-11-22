@@ -3,6 +3,15 @@ gettingcleaningdataproject
 
 Course Project for Getting and Cleaning Data Course
 
+###What the analysis file does (run_analysis.R)
+- Loads global label files (features and activity labels)
+- Loads TRAIN and TEST Data
+- Combines TRAIN and TEST Data
+- From the Feature Set, extracts only the features the has the  mean and standard deviation for each measurement.
+- From the combined data set, creates a second, independent tidy data set with the average of the remaining features for each activity and each subject.
+- Outputs the data in a projectOutput.txt file
+- Views projectOutput.txt in RStudio via the View command
+
 ###Data for this project is from: 
 
 DATA FILE: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip

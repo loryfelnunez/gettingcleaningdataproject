@@ -40,16 +40,16 @@ As per http://vita.had.co.nz/papers/tidy-data.pdf page 4, tidy data has the foll
 
 #####1. Each variable forms a column.
 
--> In this tidy data set, column represents a variable.  A variable is the average of the
+- In this tidy data set, column represents a variable.  A variable is the average of the
 mean or standard deviation of features with mean() or std() in the column name.  
 Other types of mean(ex. meanFreq()) were not included.
 
 #####2. Each observation forms a row.
---> Each observation consists of the measurements of the subject while doing a 
+- Each observation consists of the measurements of the subject while doing a 
 specific activity.  This observation is in one row.
 
 #####3. Each type of observational unit forms a table
---> The whole table forms an observational unit grouped by subject and activity.
+- The whole table forms an observational unit grouped by subject and activity.
 
 
 

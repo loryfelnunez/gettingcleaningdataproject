@@ -1,0 +1,362 @@
+CODEBOOK 
+
+FEATURES from Human Activity Recognition Using Smartphones Data Set 
+as Observed in Subjects in various Activities
+
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+
+
+
+Subject
+    Source: ProjectData/test/subject_test.txt 
+            ProjectData/train/subject_train.txt
+    1 ... 30 Subject ID
+
+Activity
+    Source: ProjectData/activity_lables.txt
+    WALKING
+    WALKING_UP
+    WALKING_DOWN
+    SITTING
+    STANDING
+    LAYING
+
+tBodyAcc.mean.X
+    time domain signals
+    average of the mean of body acceleration signal in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAcc.mean.Y
+    time domain signals
+    average of the mean of body acceleration signal in Y axis from accelerometer 
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAcc.mean.Z
+    time domain signals
+    average of the mean of body acceleration signal in Z axis from accelerometer 
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAcc.std.X
+    time domain signals
+    average of the standard deviation of body acceleration signal in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAcc.std.Y
+   time domain signals
+   average of the standard deviaton of body acceleration signal in Y axis from accelerometer 
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAcc.std.Z
+    time domain signals
+    average of the standard deviaton of body acceleration signal in Z axis from accelerometer 
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAcc.mean.X
+    time domain signals
+    average of the mean of gravity acceleration signal in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAcc.mean.Y
+    time domain signals
+    average of the mean of gravity acceleration signal in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAcc.mean.Z
+    time domain signals
+    average of the mean of gravity acceleration signal in Z axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAcc.std.X
+    time domain signals
+    average of the standard deviation of gravity acceleration signal in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAcc.std.Y
+    time domain signals
+    average of the standard deviation of gravity acceleration signal in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAcc.std.Z
+    time domain signals
+    average of the standard deviation of gravity acceleration signal in Z axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerk.mean.X
+    time domain signals
+    average of the mean of body acceleration signal jerk in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerk.mean.Y
+    time domain signals
+    average of the mean of body acceleration signal jerk in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerk.mean.Z
+    time domain signals
+    average of the mean of body acceleration signal jerk in Z axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerk.std.X
+    time domain signals
+    average of the standard deviation of body acceleration signal jerk in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerk.std.Y
+    time domain signals
+    average of the standard deviation of body acceleration signal jerk in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerk.std.Z
+   time domain signals
+   average of the standard deviation of body acceleration signal jerk in Z axis from accelerometer     
+   -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyro.mean.X
+   time domain signals
+   average of the mean of body acceleration signal in X axis from gyrometer
+   -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyro.mean.Y
+   time domain signals
+   average of the mean of body acceleration signal in Y axis from gyrometer
+   -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyro.mean.Z
+   time domain signals
+   average of the mean of body acceleration signal in Z axis from gyrometer
+   -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyro.std.X
+   time domain signals
+   average of the standard deviation of body acceleration signal in X axis from gyrometer
+   -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyro.std.Y
+   time domain signals
+   average of the standard deviation of body acceleration signal in Y axis from gyrometer
+   -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyro.std.Z
+   time domain signals
+   average of the standard deviation of body acceleration signal in Z axis from gyrometer
+   -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerk.mean.X
+    time domain signals
+    average of the mean of body acceleration signal jerk in X axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerk.mean.Y
+    time domain signals
+    average of the mean of body acceleration signal jerk in Y axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerk.mean.Z
+    time domain signals
+    average of the mean of body acceleration signal jerk in Z axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerk.std.X
+    time domain signals
+    average of the standard deviation of body acceleration signal jerk in X axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerk.std.Y
+    time domain signals
+    average of the standard deviation of body acceleration signal jerk in Y axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerk.std.Z
+    time domain signals
+    average of the standard deviation of body acceleration signal jerk in Z axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccMag.mean
+    time domain signals
+    average of the mean of body acceleration signal magnitude from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccMag.std
+    time domain signals
+    average of the standard deviation of body acceleration signal magnitude from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAccMag.mean
+    time domain signals
+    average of the mean of gravity acceleration signal magnitude from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tGravityAccMag.std
+    time domain signals
+    average of the standard deviation of gravity acceleration signal magnitude from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerkMag.mean
+    time domain signals
+    average of the mean of body acceleration signal jerk magnitude from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyAccJerkMag.std
+    time domain signals
+    average of the standard deviation of body acceleration signal jerk magnitude from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroMag.mean
+    time domain signals
+    average of the mean of body acceleration signal magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroMag.std
+    time domain signals
+    average of the standard deviation of body acceleration signal magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerkMag.mean
+    time domain signals
+    average of the mean of body acceleration signal jerk magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+tBodyGyroJerkMag.std
+    time domain signals
+    average of the standard deviation of body acceleration signal jerk magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAcc.mean.X
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAcc.mean.Y
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAcc.mean.Z
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of bpdy acceleration signal in Z axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAcc.std.X
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration body in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAcc.std.Y
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAcc.std.Z
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal in Z axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccJerk.mean.X
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal jerk in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccJerk.mean.Y
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal jerk in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccJerk.mean.Z
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal jerk in Z axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccJerk.std.X
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal jerk in X axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccJerk.std.Y
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal jerk in Y axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccJerk.std.Z
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal jerk in Z axis from accelerometer     
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyGyro.mean.X
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal in X axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyGyro.mean.Y
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal in Y axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyGyro.mean.Z
+    frequency domain signals - time domain with Fast Fourier Transform
+    average of the mean ody acceleration signal body in Z axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyGyro.std.X
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal in X axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyGyro.std.Y
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal in Y axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyGyro.std.Z
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal body in Z axis from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccMag.mean
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal magnitude from accelerometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyAccMag.std
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal magnitude from accelerometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyBodyAccJerkMag.mean
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal jerk magnitude from accelerometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyBodyAccJerkMag.std
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal jerk magnitude from accelerometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyBodyGyroMag.mean
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal jerk magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyBodyGyroMag.std
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal jerk magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyBodyGyroJerkMag.mean
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the mean of body acceleration signal jerk magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+
+fBodyBodyGyroJerkMag.std
+    frequency domain signals - time domain signals with Fast Fourier Transform
+    average of the standard deviation of body acceleration signal jerk magnitude from gyrometer
+    -0.99999999999999 .... 0.99999999999999 Hz
+ 
